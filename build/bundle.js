@@ -549,55 +549,24 @@ var app = (function () {
 
     const programacion = [
      
-      {"title": "Book-List",
+      {"title": "Conjuro protector de jardín",
        "description": "Aplicación con Local Storage realizada en Html, Bootstrap y JavaScript",
-       "url": "https://enzodaneri.github.io/book-list/"
+       "url": ""
       }, 
-      {"title": "HandsWash-App",
+      {"title": "Conjuro protector de patio",
       "description": "Aplicación para lavado de manos por covid-19",
       "url": "https://enzodaneri.github.io/hands-washing/"
       }, 
-      {"title": "Budget Estimator",
+      {"title": "Conjuro para alejar plagas",
       "description": "Estimador de Presupuesto",
       "url": "https://enzodaneri.github.io/project-estimator/"
       },
       
-      {"title": "Lista de Tareas",
+      {"title": "Conjuro para favorecer la floración",
        "description": "Crud realizado en Html, Css y JavaScript",
        "url": "https://enzodaneri.github.io/todo-list/"
-      },
-      {"title": "Filter List",
-       "description": "Lista filtrable realizada en Html, Materialize y JavaScript",
-       "url": "https://enzodaneri.github.io/lista--filtrable/"
-      },
-      {"title": "Crud Products",
-       "description": "Aplicación crud realizada en Html, Bootstrap y JavaScript",
-       "url": "https://enzodaneri.github.io/crud-products/"
-      },
-      {"title": "Landing Page",
-       "description": "Landing Page realizada en Html, Css y JavaScript",
-       "url": "https://enzodaneri.github.io/landing2/"
-      },
-      {"title": "App de Tareas",
-       "description": "App de tareas realizada en Html, Bootstrap y JavaScript",
-       "url": " https://enzodaneri.github.io/app-tareas/"
-      },
-      {"title": "Galería de Imágenes",
-       "description": "Componente de UI realizado en Html, Css y JavaScript",
-       "url": "https://enzodaneri.github.io/galer-a-imgs/"
-      },
-      {"title": "Card User Neumórfica",
-      "description": "Componente de UI realizado en Html, Css y JavaScript",
-      "url": "https://enzodaneri.github.io/card-user-neumorphism/"
-      },
-      {"title": "Botón Check Out Neumórfico",
-      "description": "Componente de UI realizado en Html y Css",
-      "url": "https://enzodaneri.github.io/Neumorphism-Button/"
-      },
-      {"title": "Slider con cuadro de texto",
-      "description": "Componente de UI realizado en Html, Css y Javascript",
-      "url": "https://enzodaneri.github.io/slider/"
       }
+      
 
     ];
 
@@ -620,7 +589,7 @@ var app = (function () {
     		c() {
     			div = element("div");
     			div.textContent = "Ocultar";
-    			attr(div, "class", "btn svelte-vjs7yy");
+    			attr(div, "class", "btn svelte-87h9zo");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -649,7 +618,7 @@ var app = (function () {
     		c() {
     			div = element("div");
     			div.textContent = "Portfolio";
-    			attr(div, "class", "btn svelte-vjs7yy");
+    			attr(div, "class", "btn svelte-87h9zo");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -737,9 +706,6 @@ var app = (function () {
     	let div3;
     	let div2;
     	let div1;
-    	let a;
-    	let div0;
-    	let a_href_value;
     	let t1;
     	let p;
     	let t2_value = /*project*/ ctx[2].title + "";
@@ -753,26 +719,19 @@ var app = (function () {
     			div3 = element("div");
     			div2 = element("div");
     			div1 = element("div");
-    			a = element("a");
-    			div0 = element("div");
-    			div0.textContent = "Ver";
+    			div1.innerHTML = `<div class="verLink svelte-87h9zo">Ver</div>`;
     			t1 = space();
     			p = element("p");
     			t2 = text(t2_value);
     			t3 = space();
-    			attr(div0, "class", "verLink svelte-vjs7yy");
-    			attr(a, "href", a_href_value = /*project*/ ctx[2].url);
-    			attr(a, "class", "svelte-vjs7yy");
     			attr(div1, "class", "card-content");
-    			attr(p, "class", "svelte-vjs7yy");
-    			attr(div2, "class", div2_class_value = "" + (null_to_empty(/*index*/ ctx[4] % 2 == 0 ? "card" : "cardDos") + " svelte-vjs7yy"));
+    			attr(p, "class", "svelte-87h9zo");
+    			attr(div2, "class", div2_class_value = "" + (null_to_empty(/*index*/ ctx[4] % 2 == 0 ? "card" : "cardDos") + " svelte-87h9zo"));
     		},
     		m(target, anchor) {
     			insert(target, div3, anchor);
     			append(div3, div2);
     			append(div2, div1);
-    			append(div1, a);
-    			append(a, div0);
     			append(div2, t1);
     			append(div2, p);
     			append(p, t2);
@@ -822,7 +781,7 @@ var app = (function () {
     		c() {
     			div3 = element("div");
     			h1 = element("h1");
-    			h1.innerHTML = `Protección de <span class="svelte-vjs7yy">Jardines</span>`;
+    			h1.innerHTML = `Protección de <span class="svelte-87h9zo">Jardines</span>`;
     			t2 = space();
     			div2 = element("div");
     			div1 = element("div");
@@ -833,21 +792,21 @@ var app = (function () {
     			t5 = space();
     			div0 = element("div");
 
-    			div0.innerHTML = `<a href="https://github.com/EnzoDaneri" target="blank" class="svelte-vjs7yy"><i class="fab fa-github svelte-vjs7yy"></i></a> 
-     <a href="https://wa.me/542392462524/?text=Hola!%20vi%20tu%20web%20" class="svelte-vjs7yy"><i class="fab fa-whatsapp svelte-vjs7yy"></i></a> 
-     <a href="https://www.linkedin.com/in/enzo-adri%C3%A1n-daneri-desarrollo-web/" target="blank" class="svelte-vjs7yy"><i class="fab fa-linkedin-in svelte-vjs7yy"></i></a>`;
+    			div0.innerHTML = `<i class="fab fa-github svelte-87h9zo"></i> 
+      <i class="fab fa-whatsapp svelte-87h9zo"></i> 
+      <i class="fab fa-linkedin-in svelte-87h9zo"></i>`;
 
     			t8 = space();
     			if_block0.c();
     			t9 = space();
     			if (if_block1) if_block1.c();
-    			attr(h1, "class", "svelte-vjs7yy");
-    			attr(i0, "class", "fas fa-hat-wizard svelte-vjs7yy");
-    			attr(p, "class", "svelte-vjs7yy");
-    			attr(div0, "class", "icons svelte-vjs7yy");
+    			attr(h1, "class", "svelte-87h9zo");
+    			attr(i0, "class", "fas fa-hat-wizard svelte-87h9zo");
+    			attr(p, "class", "svelte-87h9zo");
+    			attr(div0, "class", "icons svelte-87h9zo");
     			attr(div1, "class", "card-content");
-    			attr(div2, "class", "cardTres svelte-vjs7yy");
-    			attr(div3, "class", "container svelte-vjs7yy");
+    			attr(div2, "class", "cardTres svelte-87h9zo");
+    			attr(div3, "class", "container svelte-87h9zo");
     		},
     		m(target, anchor) {
     			insert(target, div3, anchor);
@@ -981,84 +940,36 @@ var app = (function () {
 
     function create_if_block_1$1(ctx) {
     	let div3;
-    	let h1;
-    	let t2;
-    	let div2;
-    	let div1;
-    	let i0;
-    	let t3;
-    	let p0;
-    	let t5;
-    	let i1;
-    	let t6;
-    	let p1;
-    	let t8;
-    	let div0;
     	let div3_intro;
     	let t10;
     	let current;
-    	let mounted;
-    	let dispose;
     	const back = new Back({});
     	back.$on("click", /*click_handler*/ ctx[2]);
 
     	return {
     		c() {
     			div3 = element("div");
-    			h1 = element("h1");
-    			h1.innerHTML = `<span class="svelte-1qp4h06">Cuidado de</span> Tesoros`;
-    			t2 = space();
-    			div2 = element("div");
-    			div1 = element("div");
-    			i0 = element("i");
-    			t3 = space();
-    			p0 = element("p");
-    			p0.textContent = "Custodia de Tesoros subterráneos.";
-    			t5 = space();
-    			i1 = element("i");
-    			t6 = space();
-    			p1 = element("p");
-    			p1.textContent = "Para cualquier lugar del mundo";
-    			t8 = space();
-    			div0 = element("div");
-    			div0.textContent = "Comprar";
+
+    			div3.innerHTML = `<h1 class="svelte-1qp4h06"><span class="svelte-1qp4h06">Cuidado de</span> Tesoros</h1> 
+
+<div class="card svelte-1qp4h06"><div class="card-content"><i class="far fa-gem svelte-1qp4h06"></i> 
+
+ <p class="svelte-1qp4h06">Custodia de Tesoros subterráneos. </p> 
+ <i class="fas fa-globe-americas svelte-1qp4h06"></i> 
+ <p class="svelte-1qp4h06">Para cualquier lugar del mundo</p> 
+ 
+  <div class="btn svelte-1qp4h06">Contratar</div></div></div>`;
+
     			t10 = space();
     			create_component(back.$$.fragment);
-    			attr(h1, "class", "svelte-1qp4h06");
-    			attr(i0, "class", "far fa-gem svelte-1qp4h06");
-    			attr(p0, "class", "svelte-1qp4h06");
-    			attr(i1, "class", "fas fa-globe-americas svelte-1qp4h06");
-    			attr(p1, "class", "svelte-1qp4h06");
-    			attr(div0, "class", "btn svelte-1qp4h06");
-    			attr(div1, "class", "card-content");
-    			attr(div2, "class", "card svelte-1qp4h06");
     			attr(div3, "class", "container svelte-1qp4h06");
     		},
     		m(target, anchor) {
     			insert(target, div3, anchor);
-    			append(div3, h1);
-    			append(div3, t2);
-    			append(div3, div2);
-    			append(div2, div1);
-    			append(div1, i0);
-    			append(div1, t3);
-    			append(div1, p0);
-    			append(div1, t5);
-    			append(div1, i1);
-    			append(div1, t6);
-    			append(div1, p1);
-    			append(div1, t8);
-    			append(div1, div0);
     			insert(target, t10, anchor);
     			mount_component(back, target, anchor);
     			current = true;
-
-    			if (!mounted) {
-    				dispose = listen(div0, "click", /*showComprar*/ ctx[1]);
-    				mounted = true;
-    			}
     		},
-    		p: noop,
     		i(local) {
     			if (current) return;
 
@@ -1080,8 +991,6 @@ var app = (function () {
     			if (detaching) detach(div3);
     			if (detaching) detach(t10);
     			destroy_component(back, detaching);
-    			mounted = false;
-    			dispose();
     		}
     	};
     }
@@ -1150,8 +1059,6 @@ var app = (function () {
     		p(ctx, [dirty]) {
     			if (/*comprar*/ ctx[0] == false) {
     				if (if_block0) {
-    					if_block0.p(ctx, dirty);
-
     					if (dirty & /*comprar*/ 1) {
     						transition_in(if_block0, 1);
     					}
@@ -1301,18 +1208,18 @@ var app = (function () {
     		c() {
     			div4 = element("div");
 
-    			div4.innerHTML = `<div class="card svelte-nxnn2"><div class="card-content"><img src="./img/gnomo.png" alt="Foto de Juan Gnomo" class="svelte-nxnn2"> 
-<h1 class="svelte-nxnn2"><span class="svelte-nxnn2">Juan</span> Gnomo</h1> 
-<p class="phone svelte-nxnn2">Argentina. Bosque Encantado. Buenos Aires</p> 
-<p class="phone svelte-nxnn2"><i class="fas fa-phone-alt"></i>  <span class="svelte-nxnn2">+54 2392 15 462524</span></p> 
-     <div class="icons svelte-nxnn2"><a href="https://github.com/EnzoDaneri" target="blank"><i class="fab fa-github svelte-nxnn2"></i></a> 
-     <a href="https://wa.me/542392462524/?text=Hola!.%20Vi%20tu%20perfil%20"><i class="fab fa-whatsapp svelte-nxnn2"></i></a> 
-     <a href="https://www.linkedin.com/in/enzo-adri%C3%A1n-daneri-desarrollo-web/" target="blank"><i class="fab fa-linkedin-in svelte-nxnn2"></i></a> 
-     <a href="https://www.facebook.com/enzodaneri" target="blank"><i class="fab fa-facebook-f svelte-nxnn2"></i></a> 
-     <a href="https://www.instagram.com/danerienzo/" target="blank"><i class="fab fa-instagram svelte-nxnn2"></i></a></div> 
-<div class="curriculum svelte-nxnn2"><a href="curriculum-juan-gnomo.pdf" target="blank" class="svelte-nxnn2"><p><i class="far fa-address-card svelte-nxnn2"></i>   Mi C.V</p></a></div></div></div>`;
+    			div4.innerHTML = `<div class="card svelte-1uft8zw"><div class="card-content"><img src="./img/gnomo.png" alt="Foto de Juan Gnomo" class="svelte-1uft8zw"> 
+<h1 class="svelte-1uft8zw"><span class="svelte-1uft8zw">Juan</span> Gnomo</h1> 
+<p class="phone svelte-1uft8zw">Argentina. Bosque Encantado. Buenos Aires</p> 
+<p class="phone svelte-1uft8zw"><i class="fas fa-phone-alt"></i>  <span class="svelte-1uft8zw">+54 2392 15 462524</span></p> 
+     <div class="icons svelte-1uft8zw"><i class="fab fa-github svelte-1uft8zw"></i> 
+   <i class="fab fa-whatsapp svelte-1uft8zw"></i> 
+    <i class="fab fa-linkedin-in svelte-1uft8zw"></i> 
+   <i class="fab fa-facebook-f svelte-1uft8zw"></i> 
+  <i class="fab fa-instagram svelte-1uft8zw"></i></div> 
+<div class="curriculum svelte-1uft8zw"><a href="curriculum-juan-gnomo.pdf" target="blank" class="svelte-1uft8zw"><p><i class="far fa-address-card svelte-1uft8zw"></i>   Mi C.V</p></a></div></div></div>`;
 
-    			attr(div4, "class", "container svelte-nxnn2");
+    			attr(div4, "class", "container svelte-1uft8zw");
     		},
     		m(target, anchor) {
     			insert(target, div4, anchor);
@@ -1402,19 +1309,20 @@ var app = (function () {
     		c() {
     			div4 = element("div");
 
-    			div4.innerHTML = `<h1 class="svelte-1p7bfwx">Travesuras en gral.</h1> 
+    			div4.innerHTML = `<h1 class="svelte-1jna09e">Travesuras en gral.</h1> 
 
 
-<div class="card svelte-1p7bfwx"><div class="card-content"><i class="fas fa-candy-cane svelte-1p7bfwx"></i> 
-<p class="svelte-1p7bfwx"> Todo tipo de travesuras para particulares y empresas</p> 
-    <div class="icons svelte-1p7bfwx"><a href="https://github.com/EnzoDaneri" target="blank" class="svelte-1p7bfwx"><i class="fab fa-github svelte-1p7bfwx"></i></a> 
-     <a href="https://www.linkedin.com/in/enzo-adri%C3%A1n-daneri-desarrollo-web/" target="blank" class="svelte-1p7bfwx"><i class="fab fa-linkedin-in svelte-1p7bfwx"></i></a> 
-     <a href="https://www.facebook.com/enzodaneri" target="blank" class="svelte-1p7bfwx"><i class="fab fa-facebook-f svelte-1p7bfwx"></i></a> 
-     <a href="https://www.instagram.com/danerienzo/" target="blank" class="svelte-1p7bfwx"><i class="fab fa-instagram svelte-1p7bfwx"></i></a></div></div></div> 
+<div class="card svelte-1jna09e"><div class="card-content"><i class="fas fa-candy-cane svelte-1jna09e"></i> 
+<p class="svelte-1jna09e"> Todo tipo de travesuras para particulares y empresas</p> 
+    <div class="icons svelte-1jna09e"><i class="fab fa-github svelte-1jna09e"></i> 
+    <i class="fab fa-linkedin-in svelte-1jna09e"></i> 
+    <i class="fab fa-facebook-f svelte-1jna09e"></i> 
+    <i class="fab fa-instagram svelte-1jna09e"></i></div></div></div> 
 
-    <a href="https://wa.me/542392462524/?text=Hola!.%20" class="svelte-1p7bfwx"><div class="btn svelte-1p7bfwx">Contactar</div></a>`;
+ 
+    <div class="btn svelte-1jna09e">Contactar</div>`;
 
-    			attr(div4, "class", "container svelte-1p7bfwx");
+    			attr(div4, "class", "container svelte-1jna09e");
     		},
     		m(target, anchor) {
     			insert(target, div4, anchor);
